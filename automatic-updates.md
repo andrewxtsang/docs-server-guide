@@ -13,9 +13,10 @@ Unattended-Upgrade::Allowed-Origins {
 //      "${distro_id}:${distro_codename}-proposed";
 //      "${distro_id}:${distro_codename}-backports";
 };
+Unattended-Upgrade::Mail "user@example.com";
+Unattended-Upgrade::Remove-Unused-Dependencies "true";
 Unattended-Upgrade::Automatic-Reboot "true";
 Unattended-Upgrade::Automatic-Reboot-Time "02:00";
-Unattended-Upgrade::Mail "EMAIL";
 ```
 
 Enable
@@ -26,7 +27,7 @@ sudo vi /etc/apt/apt.conf.d/20auto-upgrades
 APT::Periodic::Update-Package-Lists "7";
 APT::Periodic::Unattended-Upgrade "1";
 APT::Periodic::Download-Upgradeable-Packages "1";
-APT::Periodic::AutocleanInterval "30";
+APT::Periodic::AutocleanInterval "7";
 ```
 
 Change Notification Email

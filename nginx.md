@@ -43,16 +43,19 @@ sudo systemctl restart nginx
 
 Set Authentication
 ```bash
-openssl passwd PASSWORD
+openssl passwd
 sudo vi /etc/nginx/auth
 LOGIN:PASSWORD
 ```
 
-Enable Server Blocks
+Useful Command
 ```bash
 sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
+nginx -t
 ```
 
 Reference
 - https://www.linode.com/docs/web-servers/nginx/configure-nginx-for-optimized-performance
 - https://www.linode.com/docs/web-servers/nginx/nginx-ssl-and-tls-deployment-best-practices
+- https://blog.serverdensity.com/troubleshoot-nginx/
+- https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/

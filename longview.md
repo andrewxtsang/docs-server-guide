@@ -42,6 +42,7 @@ flush privileges;
 
 Edit Longview for MySQL
 ```bash
+sudo vi /etc/linode/longview.d/MySQL.conf 
 username linode-longview 
 password ***************
 ```

@@ -1,8 +1,10 @@
 Add official source
 ```bash
 sudo apt-get install software-properties-common
-sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8sudo 
-sudo add-apt-repository 'deb [arch=amd64,i386,ppc64el]http://nyc2.mirrors.digitalocean.com/mariadb/repo/10.2/ubuntuxenial main'
+sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
+sudo vi /etc/apt/sources.list.d/mariadb.list
+deb [arch=amd64,i386] http://mirror.jmu.edu/pub/mariadb/repo/10.2/ubuntu xenial main
+deb-src http://mirror.jmu.edu/pub/mariadb/repo/10.2/ubuntu xenial main
 ```
 
 Install MariaDB 10.2
@@ -13,3 +15,10 @@ sudo systemctl enable mysql
 sudo mysql_secure_installation
 ```
 
+Useful Command
+```bash
+sudo systemctl stop mysql
+sudo systemctl start mysql
+sudo systemctl status mysql
+sudo systemctl restart mysql
+```

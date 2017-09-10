@@ -21,8 +21,8 @@ select-editor
 Update /etc/hosts
 ```bash
 vi /etc/hosts
-> IPV4 HOSTNAME
-> IPV6 HOSTNAME
+IPv4 HOSTNAME
+IPv6 HOSTNAME
 ```
 
 Setting the Timezone
@@ -55,8 +55,10 @@ Configure SSH Daemon
 vi /etc/ssh/sshd_config
 PermitRootLogin no (yes)
 Port 12345 (22)
-LogLevel VERBOSE (INFO)
 AddressFamily inet  #IPv4 only
+```
 
-sudo service ssh restart
+Restart ssh
+```bash
+sudo systemctl restart ssh
 ```

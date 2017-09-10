@@ -13,7 +13,7 @@ Add rules
 ```bash
 sudo ufw allow SSH_PORT
 sudo ufw allow 80/tcp
-sudo ufw allow https/tcp
+sudo ufw allow 443/tcp
 ```
 
 Enable firewall
