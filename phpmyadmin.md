@@ -6,7 +6,7 @@ sudo -u www-data composer create-project phpmyadmin/phpmyadmin
 
 Update
 ```bash
-sudo -u www-data composer update
+sudo -u www-data -H composer update
 ```
 
 Reference
