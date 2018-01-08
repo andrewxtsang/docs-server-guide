@@ -14,7 +14,6 @@ Edit PHP Conf
 sudo vi /etc/php/7.1/fpm/php.ini
 cgi.fix_pathinfo = 0 (1)
 allow_url_include = Off
-allow_url_fopen = Off
 expose_php = Off
 display_errors = Off
 log_errors = On
