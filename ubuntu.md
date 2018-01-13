@@ -31,6 +31,11 @@ dpkg-reconfigure tzdata
 date
 ```
 
+Restart cron
+```bash
+service cron status
+```
+
 Add a User Account
 ```bash
 adduser USERNAME
