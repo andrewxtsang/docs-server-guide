@@ -19,6 +19,7 @@
 * [Dropbox](dropbox.md)
 * [phpMyAdmin](phpmyadmin.md)
 * [ngxtop](ngxtop.md)
+* [GoAccess](goaccess.md)
 
 ### Optional
 * [Swap](swap.md)
