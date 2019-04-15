@@ -19,8 +19,6 @@ Edit config
 ```bash
 sudo vi /etc/mysql/my.cnf
 
-general_log_file        = /var/log/mysql/mysql.log
-general_log             = 1
 log_error               = /var/log/mysql/error.log
 log_warnings            = 2
 slow_query_log          = 1
