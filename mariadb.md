@@ -15,6 +15,19 @@ sudo systemctl enable mysql
 sudo mysql_secure_installation
 ```
 
+Edit config
+```bash
+sudo vi /etc/mysql/my.cnf
+
+general_log_file        = /var/log/mysql/mysql.log
+general_log             = 1
+log_error               = /var/log/mysql/error.log
+log_warnings            = 2
+slow_query_log          = 1
+slow_query_log_file     = /var/log/mysql/slow.log
+long_query_time         = 3
+```
+
 Useful Command
 ```bash
 sudo systemctl stop mysql
