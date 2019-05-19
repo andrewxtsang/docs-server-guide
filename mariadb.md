@@ -16,9 +16,12 @@ sudo mysql_secure_installation
 ```
 
 Edit config
+
 ```bash
 sudo vi /etc/mysql/my.cnf
+```
 
+```bash
 log_error               = /var/log/mysql/error.log
 log_warnings            = 2
 slow_query_log          = 1
@@ -26,7 +29,13 @@ slow_query_log_file     = /var/log/mysql/slow.log
 long_query_time         = 3
 ```
 
+```bash
+bind-address = 0.0.0.0
+wait_timeout = 60
+```
+
 Useful Command
+
 ```bash
 sudo systemctl stop mysql
 sudo systemctl start mysql
