@@ -1,6 +1,6 @@
-Install Dropbox 32bit
+Install Dropbox 64bit
 ```bash
-cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86" | tar xzf -
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 ```
 
 Reference

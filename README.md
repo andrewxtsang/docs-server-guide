@@ -1,6 +1,6 @@
 # Server Guide
 
-- Ubuntu 16.04
-- Nginx 1.12
-- MariaDB 10.2
-- PHP 7.1
+- Ubuntu 18.04
+- Nginx 1.17
+- MariaDB 10.4
+- PHP 7.3

@@ -3,11 +3,10 @@ Add official source file
 sudo wget http://nginx.org/keys/nginx_signing.key
 sudo apt-key add nginx_signing.key
 sudo vi /etc/apt/sources.list.d/nginx.list
-deb http://nginx.org/packages/ubuntu/ xenial nginx
-deb-src http://nginx.org/packages/ubuntu/ xenial nginx
+deb [arch=amd64] http://nginx.org/packages/mainline/ubuntu/ bionic nginx
 ```
 
-Install NGINX 1.12
+Install NGINX 1.17
 ```bash
 sudo apt-get update
 sudo apt-get install nginx
@@ -16,6 +15,7 @@ sudo systemctl enable nginx
 
 Change folder owner
 ```bash
+mkdir /var/www
 sudo chown -R www-data:www-data /var/www
 ```
 
