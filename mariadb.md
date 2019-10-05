@@ -33,6 +33,13 @@ wait_timeout = 60
 max_allowed_packet = 32M
 ```
 
+Create user
+
+```mysql
+CREATE USER 'USERNAME'@'localhost' IDENTIFIED BY 'PASSWORD';
+GRANT ALL PRIVILEGES ON *.* TO 'USERNAME'@'localhost' WITH GRANT OPTION;
+```
+
 Useful Command
 
 ```bash
