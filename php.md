@@ -17,9 +17,10 @@ allow_url_include = Off
 expose_php = Off
 display_errors = Off
 log_errors = On
-session.cookie_httponly = 1
-session.use_only_cookies = 1    # default empty
-session.cookie_secure = 1   #for ssl
+session.cookie_httponly = 1    # default empty
+session.use_only_cookies = 1   # default empty
+session.cookie_secure = 1      # for ssl
+memory_limit = 256M            # default 128M
 ```
 
 Restart Services
