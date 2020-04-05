@@ -27,10 +27,12 @@ slow_query_log_file     = /var/log/mysql/slow.log
 long_query_time         = 3
 ```
 
+(optional)
 ```bash
 bind-address = 0.0.0.0
 wait_timeout = 60
-max_allowed_packet = 32M
+max_allowed_packet = 32M            # default 16M
+innodb_buffer_pool_size = 512M      # default 256M
 ```
 
 Create user
